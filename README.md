@@ -15,3 +15,5 @@
 #### Paulo Rogério
 ### Banco de dados relacional
 #### Cássio Faria
+### Clube do código
+#### Prof. Marco Carvalho
