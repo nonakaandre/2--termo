@@ -10,6 +10,11 @@
     5- No HTML, exiba dentro de um PARÁGRAFO HTML a seguinte mensagem colocando as variáveis no lugar apropriado: "André tem 165 metro(s) de altura ou 6.0 pé(s)
     */
 
+    $nome = 'André';
+    $alturaM = 165;
+    $pes = 30.48;
+    $alturaP = (165*100)/30.48;
+    $formatado = number_format($alturaP, 2, ",")
 ?>
 
 <!DOCTYPE html>
@@ -22,12 +27,9 @@
 <body>
     <h1>Cálculo da altura em pés</h1>
     <?php
-    $nome = 'André';
-    $alturaM = 165;
-    $pes = 30.48;
-    $alturaP = 165/30.48;
+    
 
-    echo "$nome tem $alturaM de altura ou $alturaP" 
+    echo "$nome tem $alturaM de altura ou $formatado em pés" 
     ?>
 </body>
 </html>

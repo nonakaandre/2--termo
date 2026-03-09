@@ -16,6 +16,12 @@
         <li>
             <a href="alomundo.php">Alô Mundo e uso de variaveis</a>
         </li>
+        <li>
+            <a href="altura.php">Altura em Pés</a>
+        </li>
+        <li>
+            <a href="lista.php">Usando lista/vetores em PHP</a>
+        </li>
     </ul>
     
 </body>
