@@ -22,6 +22,9 @@
         <li>
             <a href="lista.php">Usando lista/vetores em PHP</a>
         </li>
+        <li>
+            <a href="lista_foreach.php">Foreach</a>
+        </li>
     </ul>
     
 </body>

@@ -6,7 +6,8 @@
         "Patricia Nonaka",
         "Isabella Harumi",
         "José Pedro",
-        "Daniele Etsuko"
+        "Daniele Etsuko",
+        "Rodrigo Enji"
     ];
 ?>
 
@@ -21,8 +22,9 @@
     <h1>Lista em PHP</h1>
     <h2>Aprovados em</h2> <?=  $curso; ?>
     <ol>
-        <li><?= $aprovados[0] ?></li>
-        
+        <?php foreach ($aprovados as $pessoa) { ?>
+            <li><?= $pessoa ?></li>
+            <?php } ?>
     </ol>
     <p>Quantidade total de aprovados: <?= sizeof($aprovados) ?></p>
 </body>
