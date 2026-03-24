@@ -12,13 +12,13 @@ int main() {
     for (int i=ini; i<=fim; i++) {
         if((i % 3 == 0 || i % 5 == 0) && i % 2 != 0){
             
-        if(inter == 0){
+            if(inter == 0){
             menor = i;
+            }
+            maior = i;
+            inter++;
+            soma += i;
         }
-        maior = i;
-        inter++;
-        soma += i;
-    }
     }
     printf("O primeiro número é: %d\n", menor);
     printf("O último número é: %d\n", maior);
