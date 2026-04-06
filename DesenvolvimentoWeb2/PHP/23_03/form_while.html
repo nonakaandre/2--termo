@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo while</title>
+    </head>
+    <style>
+        .label2 {
+            font-weight: 400;
+            font-size: large;
+        }
+       #final {
+        padding-right: -10px;
+       }
+       input {
+        margin: 10px;
+        display: inline;
+       }
+       button {
+        margin-left: 80px;
+        padding: 20px;
+        font-size: large;
+       }
+    </style>
+    <body>
+        <h1>Contador customizado</h1>
+        <h2>Escolha dois números, <br> vou fazer a contagem do primeiro número escolhido até o segundo. </h2>
+        <form action="contar_while.php">
+
+            <div id="label1">
+                <label for="nome">Inicio</label>
+                <input type="number" name="inicio" id="inicio">
+            </div>
+            <div >
+                <label for="nome" class="label2">Final</label >
+                <input type="number" name="final" id="final">
+            </div>
+            <button>Contar...</button>
+        </form>
+    </body>
+</html>

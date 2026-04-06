@@ -1,15 +1,15 @@
 <?php
 $selecao = [];
     // RECEBEMOS E TRATAMOS OS DADOS DO FORMULÁRIO ANTES DE USÁ-LOS.
-    $nome = htmlspecialchars(strtoupper($_GET["nome"]));
-    $email = htmlspecialchars($_GET["email"]);
-    $cidade = strtolower(htmlspecialchars($_GET["cidade"]));
-    $estado = htmlspecialchars($_GET["estado"]);
-    $data = htmlspecialchars($_GET["nascimento"]);
+    $nome = htmlspecialchars(strtoupper($_POST["nome"]));
+    $email = htmlspecialchars($_POST["email"]);
+    $cidade = strtolower(htmlspecialchars($_POST["cidade"]));
+    $estado = htmlspecialchars($_POST["estado"]);
+    $data = htmlspecialchars($_POST["nascimento"]);
     // FORMATANDO DATA
     $dataFormatada = (date("d/m/Y", strtotime($data)));
     // TRATANDO A SENHA COM CRIPTOGRAFIA
-    $senha = md5(htmlspecialchars($_GET["senha"]));
+    $senha = md5(htmlspecialchars($_POST["senha"]));
 ?>
 
 <!DOCTYPE html>
