@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            width: 400px;
+            border: 1px solid;
+            border-radius: 6px;
+        }
+
+        form div {
+            margin: 12px;
+        }
+
+        form label {
+            width: 100px;
+            display: inline-block;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        #divbotao {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fomulário de "Cadastro" com post em PHP</h1>
+    <form action="cadastrar2.php" method="post">
+    <div>
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" name="nome">
+    </div>
+    <div>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email">
+    </div>
+    <div>
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha">
+    </div>
+    <div>
+        <label for="cidade">Cidade: </label>
+        <input type="text" id="cidade" name="cidade">
+    </div>
+    <div>
+        <label for="estado">Estado: </label>
+        <select name="estado" id="estado">
+            <option selected>São Paulo</option>
+            <option>Amazonas</option>
+            <option>Piauí</option>
+            <option>Minas Gerais</option>
+        </select>
+    </div>
+    <div>
+        <label for="nascimento">Data de Nascimento</label>
+        <input type="date" name="nascimento" id="nascimento">
+    </div>
+    <div id="divbotao">
+        <button>Cadastrar</button>
+    </div>
+        </form>
+</body>
+</html>

@@ -25,11 +25,7 @@ int main() {
         if((i % 3 == 0 || i % 5 == 0) && i % 2 != 0){
             
             if(inter == 0){
-<<<<<<< HEAD
-                menor = i;
-=======
             menor = i;
->>>>>>> 1f926ce43151bf2e4fca6e024dfbf5776cd8296e
             }
             maior = i;
             inter++;
@@ -56,4 +52,3 @@ o primeiro número interessante encontrado;
 o último número interessante encontrado;
 a quantidade de números interessantes;
 a soma desses números.*/
->>>>>>> 1f926ce43151bf2e4fca6e024dfbf5776cd8296e
