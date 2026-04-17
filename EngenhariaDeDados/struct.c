@@ -51,10 +51,18 @@ void inserirFim(struct No **head, int x) {
 	}
 }
 
-void procurar() { 
+ /*void contar(struct No*head, int x) { 
+	struct No *aux=head;
 	
-	
+	while (aux-> != NULL) {
+		if (aux->valor == x) {
+			return aux;
+		}
+		aux = aux->prox;
 	}
+	return 1;
+	
+	}*/
 	
 
 	/* */
@@ -78,6 +86,12 @@ int main() {
     imprimir(head);
 
 	procurar(head, 50);
-	
+
+	/*resultado = contar(head, 99);
+	if (resultado != NULL)	
+		printf("Encontrado: %d\n", resultado->valor);
+		else
+		printf("Não encontrado!\n"); */
+
 	return 0;
 }
