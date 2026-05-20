@@ -1,5 +1,5 @@
 <?php 
-    $tipo_banco = "mysql";  // banco de dados utilizado (mysql, postgresql, etc.)
+    $tipo_banco = "mariaDB";  // banco de dados utilizado (mysql, postgresql, etc.)
     $servidor = "localhost"; // endereço do servidor de banco de dados
     $porta    = "3306";      // porta de conexão com o banco de dados
     $banco    = "loja"; // Nome do banco de dados
