@@ -1,0 +1,4 @@
+Preferences: Open Settings (JSON)
+{
+    "phpserver.port": 8080
+}

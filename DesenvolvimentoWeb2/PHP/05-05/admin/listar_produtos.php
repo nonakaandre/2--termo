@@ -1,5 +1,5 @@
 <?php 
-    require_once "conexao.php";
+    require ("conexao.php");
     
     $sql = "SELECT * FROM produtos"; //String com o comando SQL para selecionar todos os produtos
     $comado = $pdo->query($sql); // Montamos o comando SQL e executamos a consulta
@@ -20,6 +20,7 @@
     <h2>listagem de Produtos Cadastrados</h2>
     <table border="1">
         <tr>
+            <th>AÇÕES</th>
             <th>ID</th>
             <th>Nome</th>
             <th>Descrição</th>
@@ -29,6 +30,12 @@
         </tr>
         <?php foreach($resultado as $produto) {?>
         <tr>
+            <td><a href="excluir_produto.php?id=<?= $produto['id'] ?>">Excluir</a>
+                |
+                <a href="form_alterar_produto.php?id=<?= $produto['id'] ?>">Alterar</a>
+
+            </td>
+
             <td><?= $produto["id"]; ?></td>
             <td><?= $produto["nome"]; ?></td>
             <td><?= $produto["descricao"]; ?></td>

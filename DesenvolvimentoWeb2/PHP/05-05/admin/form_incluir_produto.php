@@ -11,7 +11,7 @@
 <body>
     <h1>Fatec Shop - Área administrativa</h1>
     <h2>Incluir Produto</h2>
-    <form action="incluir_produto.php">
+    <form action="incluir_produto.php" method="post">
         <div>
             <label for="nome">Nome do produto</label>
             <input type="text" id="nome" name="nome" size="50" maxlength="50">
@@ -23,11 +23,12 @@
         <div>
             <label for="preco">Preço: R$</label>
             <input type="number" id="preco" name="preco" step="any" min="0" required>
+            8
         </div>
         <div>
             <label for="promocao">Em promoção</label>
             <select name="promocao" id="promocao" required>
-                <option value="0">Não</option>
+                <option value="0" selected>Não</option>
                 <option value="1">Sim</option>
             </select>
         </div>

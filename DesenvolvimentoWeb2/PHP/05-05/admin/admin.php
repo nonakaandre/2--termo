@@ -12,7 +12,7 @@
     <h2>Área Administrativa</h2>
     <ul>
         <li>
-            <a href="listar_produtos.php"></a>
+            <a href="listar_produtos.php">Listar produtos</a>
         </li>
         <li>
             <a href="form_incluir_produto.php">Incluir um novo produto</a>
