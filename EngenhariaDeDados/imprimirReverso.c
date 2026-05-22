@@ -8,7 +8,7 @@ struct No
     struct No *prox;
 };
 
-void inserirInicio(struct No **head, struct No **tail, int x)
+void inserirInicio(struct No **head, int x)
 {
     struct No *novo = (struct No *)malloc(sizeof(struct No));
 
@@ -22,13 +22,8 @@ void inserirInicio(struct No **head, struct No **tail, int x)
     }
 
     *head = novo;
-
-    // Se a lista estava vazia, tail também aponta para o novo nó
-    if (*tail == NULL)
-    {
-        *tail = novo;
-    }
 }
+   
 
 void inserirFim(struct No **head, int x)
 {
@@ -197,9 +192,9 @@ int main()
    struct No *head = NULL;
      
 
-    inserirInicio(&head, &tail, 11);
-    inserirInicio(&head, &tail, 8);
-    inserirInicio(&head, &tail, 5);
+    inserirInicio(&head, 11);
+    inserirInicio(&head, 8);
+    inserirInicio(&head, 5);
 
     inserirFim(&head, 40);
 
