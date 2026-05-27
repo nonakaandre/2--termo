@@ -1,3 +1,7 @@
+<?php 
+    require("funcoes.php");
+    autenticar();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 

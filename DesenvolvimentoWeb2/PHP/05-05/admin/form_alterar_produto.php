@@ -1,4 +1,7 @@
 <?php 
+    require("funcoes.php");
+    autenticar();
+    
 require("conexao.php");
 
 $id = intval(htmlspecialchars($_GET["id"]));

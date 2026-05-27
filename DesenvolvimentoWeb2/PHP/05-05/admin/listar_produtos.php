@@ -1,4 +1,7 @@
 <?php 
+    require("funcoes.php");
+    autenticar();
+
     require ("conexao.php");
     
     $sql = "SELECT * FROM produtos"; //String com o comando SQL para selecionar todos os produtos

@@ -7,16 +7,14 @@ require("conexao.php");
     $promocao = intval($_POST["promocao"]);
     $lancamento = intval($_POST["lancamento"]);
 
-
-    $sql = "INSERT INTO produtos (nome, descricao, preco, promocao, lancamento) " . "VALUES (:nome, :desc, :preco, :promocao, :lanc)";
+    $sql = " INSERT INTO produtos (nome, descricao, preco, promocao, lancamento) " . "VALUES (?, ?, ?, ?, ?)";
  
     $comando = $pdo->prepare($sql);
-    $comando->bindParam(":nome", $nome);
-    $comando->bindParam(":desc", $descricao);
-    $comando->bindParam(":preco", $preco); 
-    $comando->bindParam(":promocao", $promocao);
-    $comando->bindParam(":lanc", $lancamento);
-
+    $comando->bindValue(1, $nome);
+    $comando->bindValue(2, $descricao);
+    $comando->bindValue(3, $preco); 
+    $comando->bindValue(4, $promocao);
+    $comando->bindValue(5, $lancamento);
 
     $sucesso = $comando->execute();
     if ($sucesso) {
