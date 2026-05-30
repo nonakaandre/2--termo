@@ -1,6 +1,6 @@
 <?php 
     $tipo_banco = "mysql";  // banco de dados utilizado (mysql, postgresql, etc.)
-    $servidor = "localhost"; // endereço do servidor de banco de dados
+    $servidor = "127.0.0.1"; // endereço do servidor de banco de dados
     $porta    = "3306";      // porta de conexão com o banco de dados
     $banco    = "loja"; // Nome do banco de dados
     $usuario  = "php";      // usuário do banco de dados
